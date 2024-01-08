@@ -373,7 +373,7 @@ public class studentindex1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        String rollnumber=branch1.getText();
+        String rollnumber=roll1.getText();
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");//driver class of database
@@ -393,9 +393,9 @@ public class studentindex1 extends javax.swing.JFrame {
               math.setText(rs.getString(10));
               english.setText(rs.getString(11));
               computer.setText(rs.getString(12));
-              int s1=Integer.parseInt(physics.getText());
-              String total=String.valueOf(s1);
-              computer.setText(total);
+              // int s1=Integer.parseInt(physics.getText());
+              // String total=String.valueOf(s1);
+              // computer.setText(total);
           }
         } 
          catch(Exception e)
