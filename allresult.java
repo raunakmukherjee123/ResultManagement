@@ -171,7 +171,7 @@ public class allresult extends javax.swing.JFrame {
        try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");//driver class of database
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","123@RonBuntai");//(url:"",host:"",password:"")
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","Password");//(url:"",host:"",password:"")
             Statement st=con.createStatement();//mysql works with commands only, so Statement class created
             ResultSet rs=st.executeQuery("select * from results");
           jTable1.setModel(DbUtils.resultSetToTableModel(rs));
