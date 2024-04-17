@@ -184,7 +184,7 @@ public class adminhome extends javax.swing.JFrame {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");//driver class of database
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","123@RonBuntai");//(url:"",host:"",password:"")
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","Password");//(url:"",host:"",password:"")
             Statement st=con.createStatement();//mysql works with commands only, so Statement class created
             st.executeUpdate("insert into student(rollno,course,branchname,name,gender,father) values('"+Roll+"','"+Course+"','"+Branch+"','"+Name+"','"+Gender+"','"+Father+"')");
             JOptionPane.showMessageDialog(null,"data saved succesfully");
