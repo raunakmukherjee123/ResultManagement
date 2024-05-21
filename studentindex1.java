@@ -377,7 +377,7 @@ public class studentindex1 extends javax.swing.JFrame {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");//driver class of database
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","123@RonBuntai");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/srms","root","Password");
             Statement st=con.createStatement();
        ResultSet rs=st.executeQuery("select * from student inner join where student.rollno='"+rollnumber+"' and results.roll='"+rollnumber+"'");
           // ResultSet rs=st.executeQuery("select * from results");
